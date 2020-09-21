@@ -249,6 +249,8 @@ $('.siteList > .last').on({
     $('.popWrapper').css('display', 'block');
     $('div.popTitle')[0].innerText = '添加快捷标签';
     $('button.labelFinish')[0].innerText = '添加';
+    $('.popNameInput')[0].value = null;
+    $('.popUrlInput')[0].value = null;
   }
 });
 $('.labelFinish').on('click', function () {
@@ -288,4 +290,4 @@ window.onbeforeunload = function () {
   localStorage.setItem('x', string);
 };
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.3bcce3fd.js.map
+//# sourceMappingURL=main.f4b8c0f5.js.map

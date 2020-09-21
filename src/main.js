@@ -125,6 +125,8 @@ $('.siteList > .last').on({
         $('.popWrapper').css('display', 'block')
         $('div.popTitle')[0].innerText = '添加快捷标签'
         $('button.labelFinish')[0].innerText = '添加'
+        $('.popNameInput')[0].value = null
+        $('.popUrlInput')[0].value = null
     }
 })
 $('.labelFinish').on('click', () => {

@@ -3,8 +3,15 @@ const $siteLi = $siteList.find('li.last')
 const x = localStorage.getItem('x')
 const xObject = JSON.parse(x)
 const hashMap = xObject || [
-    {name : 'A', url: 'https://www.acfun.com'},
-    {name : 'B', url: 'https://bilibili.com'}
+    {name : '前端图标', url: 'https://www.iconfont.cn'},
+    {name : 'Github', url: 'https://github.com'},
+    {name : 'Figma页面布局', url: 'https://www.figma.com/'},
+    {name : '阮一峰JS教程', url: 'http://www.ruanyifeng.com/blog/2016/11/javascript.html'},
+    {name : 'Vue.js', url: 'https://cn.vuejs.org/index.html'},
+    {name : 'React', url: 'https://zh-hans.reactjs.org/'},
+    {name : 'jQuery', url: 'https://www.jquery123.com'},
+    {name : '写代码啦', url: 'https://xiedaimala.com'},
+    {name : '语雀博客', url: 'https://www.yuque.com/'},
 ]
 const simplifyUrl = (url) => {
     return url.replace('https://', '')

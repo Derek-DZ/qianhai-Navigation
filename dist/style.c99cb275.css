@@ -76,6 +76,9 @@ body{
 }
 
 /* main */
+.globalMain{
+    margin-bottom: 50px;
+}
 
 @media (min-width: 500px) {
     .globalMain{
@@ -294,4 +297,4 @@ button.labelAdd{
     display: none;
 }
 
-/*# sourceMappingURL=style.a468dd9f.css.map */
+/*# sourceMappingURL=style.c99cb275.css.map */

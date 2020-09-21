@@ -76,6 +76,9 @@ body{
 }
 
 /* main */
+.globalMain{
+    margin-bottom: 50px;
+}
 
 @media (min-width: 500px) {
     .globalMain{

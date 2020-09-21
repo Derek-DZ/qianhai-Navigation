@@ -238,10 +238,17 @@ var render = function render() {
 
 render(); // 弹出框事件设置
 
-$('.addButton').on('click', function () {
-  $('.popWrapper').css('display', 'block');
-  $('div.popTitle')[0].innerText = '添加快捷标签';
-  $('button.labelFinish')[0].innerText = '添加';
+$('.addButton').on({
+  click: function click() {
+    $('.popWrapper').css('display', 'block');
+    $('div.popTitle')[0].innerText = '添加快捷标签';
+    $('button.labelFinish')[0].innerText = '添加';
+  },
+  touchstart: function touchstart() {
+    $('.popWrapper').css('display', 'block');
+    $('div.popTitle')[0].innerText = '添加快捷标签';
+    $('button.labelFinish')[0].innerText = '添加';
+  }
 });
 $('.labelFinish').on('click', function () {
   if ($('button.labelFinish')[0].innerText === '添加') {
@@ -280,4 +287,4 @@ window.onbeforeunload = function () {
   localStorage.setItem('x', string);
 };
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.727c8c64.js.map
+//# sourceMappingURL=main.c292e913.js.map

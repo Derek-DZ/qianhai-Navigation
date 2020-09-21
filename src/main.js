@@ -114,10 +114,17 @@ const render = ()=>{
 render()
 
 // 弹出框事件设置
-$('.addButton').on('click', () => {
-    $('.popWrapper').css('display', 'block')
-    $('div.popTitle')[0].innerText='添加快捷标签'
-    $('button.labelFinish')[0].innerText='添加'
+$('.addButton').on({
+    click: () => {
+        $('.popWrapper').css('display', 'block')
+        $('div.popTitle')[0].innerText = '添加快捷标签'
+        $('button.labelFinish')[0].innerText = '添加'
+    },
+    touchstart: () => {
+        $('.popWrapper').css('display', 'block')
+        $('div.popTitle')[0].innerText = '添加快捷标签'
+        $('button.labelFinish')[0].innerText = '添加'
+    }
 })
 $('.labelFinish').on('click', () => {
     if($('button.labelFinish')[0].innerText==='添加'){

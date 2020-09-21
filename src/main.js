@@ -13,6 +13,7 @@ const hashMap = xObject || [
     {name : '写代码啦', url: 'https://xiedaimala.com'},
     {name : '语雀博客', url: 'https://www.yuque.com/'},
 ]
+document.body.addEventListener('touchstart', function () {}); //ios端监听屏幕触摸事件
 const simplifyUrl = (url) => {
     return url.replace('https://', '')
         .replace('http://', '')

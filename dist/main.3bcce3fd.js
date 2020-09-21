@@ -150,6 +150,7 @@ var hashMap = xObject || [{
   name: '语雀博客',
   url: 'https://www.yuque.com/'
 }];
+document.body.addEventListener('touchstart', function () {}); //ios端监听屏幕触摸事件
 
 var simplifyUrl = function simplifyUrl(url) {
   return url.replace('https://', '').replace('http://', '').replace('www.', '').replace(/\/.*/, '');
@@ -287,4 +288,4 @@ window.onbeforeunload = function () {
   localStorage.setItem('x', string);
 };
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.e2488422.js.map
+//# sourceMappingURL=main.3bcce3fd.js.map
